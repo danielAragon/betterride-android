@@ -1,54 +1,32 @@
+package com.betterride.brcount.network
+
 import com.androidnetworking.AndroidNetworking
 import com.androidnetworking.common.Priority
 import com.androidnetworking.error.ANError
 import com.androidnetworking.interfaces.ParsedRequestListener
 
-class NewsApi {
+class BRApi {
     companion object {
-        val baseUrl = "https://newsapi.org"
-        val topHeadlinesUrl = "$baseUrl/v2/top-headlines"
+        val baseUrl = "http://demo5617161.mockable.io/"
+        val countingsessions = "$baseUrl/countingsessions"
         val everythingUrl = "$baseUrl/v2/everything"
         val sourcesUrl = "$baseUrl/v2/sources"
 
         fun requestHeadlines(key: String,
-                             responseHandler: (ArticlesResponse?) -> Unit,
+                             responseHandler: (SessionsResponse?) -> Unit,
                              errorHandler: (ANError?) -> Unit) {
-            AndroidNetworking.get(NewsApi.topHeadlinesUrl)
-                    .addQueryParameter("apiKey", key)
-                    .addQueryParameter("language", "en")
+            AndroidNetworking.get(BRApi.countingsessions)
                     .setPriority(Priority.LOW)
-                    .setTag("CatchUp")
+                    .setTag("BRCount")
                     .build()
-                    .getAsObject(ArticlesResponse::class.java,
-                            object : ParsedRequestListener<ArticlesResponse> {
-                                override fun onResponse(response: ArticlesResponse?) {
+                    .getAsObject(SessionsResponse::class.java, object : ParsedRequestListener<SessionsResponse> {
+                                override fun onResponse(response: SessionsResponse?) {
                                     responseHandler(response)
                                 }
                                 override fun onError(anError: ANError?) {
                                     errorHandler(anError)
                                 }
                             })
-        }
-
-        fun requestSources(key: String,
-                           responseHandler: (SourcesResponse?) -> Unit,
-                           errorHandler: (ANError?) -> Unit) {
-            AndroidNetworking.get(NewsApi.sourcesUrl)
-                    .addQueryParameter("apiKey", key)
-                    .addQueryParameter("language", "en")
-                    .setPriority(Priority.LOW)
-                    .setTag("CatchUp")
-                    .build()
-                    .getAsObject(SourcesResponse::class.java,
-                            object : ParsedRequestListener<SourcesResponse> {
-                                override fun onResponse(response: SourcesResponse?) {
-                                    responseHandler(response)
-                                }
-                                override fun onError(anError: ANError?) {
-                                    errorHandler(anError)
-                                }
-                            })
-
         }
     }
 }

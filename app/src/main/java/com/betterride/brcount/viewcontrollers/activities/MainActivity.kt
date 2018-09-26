@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val intent: Intent
-        intent = Intent(this, CountingSessions::class.java)
+        intent = Intent(this, CountingSessionsActivity::class.java)
         startActivity(intent)
     }
 }

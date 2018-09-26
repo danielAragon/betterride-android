@@ -42,7 +42,7 @@
                     android:textSize="20sp"
                     android:ellipsize="end"
                     android:maxLines="1"
-                    android:text="Abril MAyo"/>
+                    android:text="Abril"/>
 
             </LinearLayout>
             <View

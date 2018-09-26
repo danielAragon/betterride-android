@@ -30,9 +30,6 @@ class CountingSessionsAdapter(var sessions: ArrayList<Session>,
     }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val pictureImageView = view.pictureImageView
-        val titleTextView = view.titleTextView
-        val articleLayout = view.articleLayout
 
         val dayTextView = view.dayTextView
         val monthTextView = view.monthTextView
@@ -42,17 +39,16 @@ class CountingSessionsAdapter(var sessions: ArrayList<Session>,
         val sessionCardView = view.cardView
 
         fun updateFrom(session: Session) {
-            dayTextView.text = session.
-            pictureImageView.setDefaultImageResId(R.mipmap.ic_launcher)
-            pictureImageView.setErrorImageResId(R.mipmap.ic_launcher)
-            pictureImageView.setImageUrl(session.urlToImage)
-            titleTextView.text = session.title
-
-            articleLayout.setOnClickListener { view ->
+            dayTextView.text = session.day
+            monthTextView.text = session.month
+            scheduleTextView.text = session.schedule
+            junctionTextView.text = session.junction
+            laneTextView.text = session.lane
+            sessionCardView.setOnClickListener { view ->
                 val context = view.context
-                context.startActivity(
-                        Intent(context, ArticleActivity::class.java)
-                                .putExtras(article.toBundle()))
+//                context.startActivity(
+//                        Intent(context, ArticleActivity::class.java)
+//                                .putExtras(session.toBundle()))
 
             }
         }

@@ -11,7 +11,7 @@ import com.betterride.brcount.viewcontrollers.fragments.DoneSessionsFragment
 import com.betterride.brcount.viewcontrollers.fragments.PendingSessionsFragment
 import kotlinx.android.synthetic.main.activity_counting_sessions.*
 
-class CountingSessions : AppCompatActivity() {
+class CountingSessionsActivity : AppCompatActivity() {
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         return@OnNavigationItemSelectedListener navigateTo(item)
