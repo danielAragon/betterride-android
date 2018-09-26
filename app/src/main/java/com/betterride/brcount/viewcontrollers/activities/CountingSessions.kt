@@ -24,7 +24,6 @@ class CountingSessions : AppCompatActivity() {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
         navigation.selectedItemId = R.id.navigation_pending_sessions
-
     }
 
     private fun fragmentFor(item: MenuItem): Fragment {
