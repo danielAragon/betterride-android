@@ -20,13 +20,13 @@ class BRApi {
                     .setTag("BRCount")
                     .build()
                     .getAsObject(SessionsResponse::class.java, object : ParsedRequestListener<SessionsResponse> {
-                                override fun onResponse(response: SessionsResponse?) {
-                                    responseHandler(response)
-                                }
-                                override fun onError(anError: ANError?) {
-                                    errorHandler(anError)
-                                }
-                            })
+                        override fun onResponse(response: SessionsResponse?) {
+                            responseHandler(response)
+                        }
+                        override fun onError(anError: ANError?) {
+                            errorHandler(anError)
+                        }
+                    })
         }
     }
 }
