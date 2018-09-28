@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.betterride.brcount">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -11,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".viewcontrollers.activities.MainActivity">
+        <activity
+            android:name=".viewcontrollers.activities.MainActivity"
+            android:label="MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,7 +24,16 @@
         </activity>
         <activity
             android:name=".viewcontrollers.activities.CountingSessionsActivity"
-            android:label="@string/title_activity_counting_sessions"></activity>
+            android:label="@string/title_activity_counting_sessions"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".viewcontrollers.activities.CountingActivity"
+            android:label="@string/title_activity_counting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".viewcontrollers.activities.ReportingActivity"
+            android:label="@string/title_activity_reporting"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

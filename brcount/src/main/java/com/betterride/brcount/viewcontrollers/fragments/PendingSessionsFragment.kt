@@ -15,6 +15,7 @@ import com.betterride.brcount.models.Session
 import com.betterride.brcount.network.BRApi
 import com.betterride.brcount.network.SessionsResponse
 import com.betterride.brcount.viewcontrollers.adapters.CountingSessionsAdapter
+import com.betterride.brcount.viewcontrollers.adapters.CountingStatus
 import kotlinx.android.synthetic.main.fragment_pending_sessions.view.*
 
 // TODO: Rename parameter arguments, choose names that match
@@ -28,18 +29,20 @@ class PendingSessionsFragment : Fragment() {
     lateinit var sessionsRecyclerView: RecyclerView
     lateinit var sessionsAdapter: CountingSessionsAdapter
     lateinit var sessionsLayoutManager: RecyclerView.LayoutManager
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+
+    override fun onCreateView(inflater: LayoutInflater,
+                              container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
+
         val view = inflater.inflate(R.layout.fragment_pending_sessions, container, false)
 
         sessionsRecyclerView = view.sessionsRecyclerView
-        sessionsAdapter = CountingSessionsAdapter(sessions, view.context)
+        sessionsAdapter = CountingSessionsAdapter(sessions, view.context, CountingStatus.PENDING)
         sessionsLayoutManager = GridLayoutManager(view.context, 1)
         sessionsRecyclerView.adapter = sessionsAdapter
         sessionsRecyclerView.layoutManager = sessionsLayoutManager
 
-        BRApi.requestHeadlines(
+        BRApi.requestHeadlines(CountingStatus.PENDING,
                 { response -> handleResponse(response)},
                 { error -> handleError(error)})
 
@@ -49,12 +52,11 @@ class PendingSessionsFragment : Fragment() {
     private fun handleResponse(response: SessionsResponse?) {
         val status = response!!.status
         if (status.equals("error", true)) {
-            Log.d("CatchUp", response.message)
+            Log.d("BRCount", response.message)
             return
         }
 
         sessions = response.sessions!!
-        Log.d("BRCount", "Found ${sessions.size} articles")
         sessionsAdapter.sessions = sessions
         sessionsAdapter.notifyDataSetChanged()
     }
@@ -62,6 +64,4 @@ class PendingSessionsFragment : Fragment() {
     private fun handleError(anError: ANError?) {
         Log.d("BRCount", anError!!.message)
     }
-
-
 }
