@@ -1,12 +1,14 @@
 package com.betterride.brcount.viewcontrollers.adapters
 
 import android.content.Context
+import android.content.Intent
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.betterride.brcount.R
 import com.betterride.brcount.models.Session
+import com.betterride.brcount.viewcontrollers.activities.CountingActivity
 import kotlinx.android.synthetic.main.item_session.view.*
 enum class CountingStatus{
     PENDING, DONE
@@ -48,9 +50,9 @@ class CountingSessionsAdapter(var sessions: ArrayList<Session>,
             laneTextView.text = session.lane
             sessionCardView.setOnClickListener { view ->
                 val context = view.context
-//                context.startActivity(
-//                        Intent(context, ArticleActivity::class.java)
-//                                .putExtras(session.toBundle()))
+                context.startActivity(
+                        Intent(context, CountingActivity::class.java)
+                                .putExtras(session.toBundle()))
 
             }
         }
