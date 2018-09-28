@@ -37,7 +37,7 @@
         android:layout_marginTop="50dp"
         android:textAlignment="center"
         android:textSize="22dp"
-        android:text="Better Counts! Better reports! Better Rides!"
+        android:text="Better Counts! Better Reports! Better Rides!"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textWelcome"
