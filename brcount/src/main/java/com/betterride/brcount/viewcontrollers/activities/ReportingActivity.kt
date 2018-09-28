@@ -5,14 +5,19 @@ import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import com.betterride.brcount.R
 
-import kotlinx.android.synthetic.main.activity_counting.*
+import kotlinx.android.synthetic.main.activity_reporting.*
 
-class CountingActivity : AppCompatActivity() {
+class ReportingActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_counting)
+        setContentView(R.layout.activity_reporting)
         setSupportActionBar(toolbar)
 
+        fab.setOnClickListener { view ->
+            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show()
+        }
     }
+
 }

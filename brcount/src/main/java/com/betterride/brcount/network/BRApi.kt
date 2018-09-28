@@ -15,11 +15,10 @@ class BRApi {
         fun requestHeadlines(status: CountingStatus,
                              responseHandler: (SessionsResponse?) -> Unit,
                              errorHandler: (ANError?) -> Unit) {
-            var url = ""
-            if (status == CountingStatus.PENDING) {
-                url = BRApi.pendingsessions
+            var url = if (status == CountingStatus.PENDING) {
+                BRApi.pendingsessions
             } else {
-                url = BRApi.donesessions
+                BRApi.donesessions
             }
             AndroidNetworking.get(url)
                     .setPriority(Priority.LOW)

@@ -29,6 +29,10 @@
         <activity
             android:name=".viewcontrollers.activities.CountingActivity"
             android:label="@string/title_activity_counting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".viewcontrollers.activities.ReportingActivity"
+            android:label="@string/title_activity_reporting"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
