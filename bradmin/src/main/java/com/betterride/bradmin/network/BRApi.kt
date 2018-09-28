@@ -1,5 +1,6 @@
-package com.betterride.brcount.network
+package com.betterride.bradmin.network
 
+import android.renderscript.RenderScript
 import com.androidnetworking.AndroidNetworking
 import com.androidnetworking.common.Priority
 import com.androidnetworking.error.ANError
@@ -8,18 +9,18 @@ import com.androidnetworking.interfaces.ParsedRequestListener
 class BRApi {
     companion object {
         val baseUrl = "http://demo5617161.mockable.io/"
-        val countingsessions = "$baseUrl/countingsessions"
-        val everythingUrl = "$baseUrl/v2/everything"
-        val sourcesUrl = "$baseUrl/v2/sources"
+        val projects = "$baseUrl/projects"
 
-        fun requestHeadlines(responseHandler: (SessionsResponse?) -> Unit,
+        fun requestGetProjects(responseHandler: (ProjectsResponse?) -> Unit,
                              errorHandler: (ANError?) -> Unit) {
-            AndroidNetworking.get(BRApi.countingsessions)
+            AndroidNetworking.get(BRApi.projects)
                     .setPriority(Priority.LOW)
-                    .setTag("BRCount")
+                    .setTag("BradminApp")
                     .build()
-                    .getAsObject(SessionsResponse::class.java, object : ParsedRequestListener<SessionsResponse> {
-                        override fun onResponse(response: SessionsResponse?) {
+                    .getAsObject(ProjectsResponse::class.java,
+                            object : ParsedRequestListener<ProjectsResponse> {
+
+                        override fun onResponse(response: ProjectsResponse?) {
                             responseHandler(response)
                         }
                         override fun onError(anError: ANError?) {
