@@ -8,11 +8,10 @@ import com.androidnetworking.interfaces.ParsedRequestListener
 
 class BRApi {
     companion object {
-        val baseUrl = "http://demo5617161.mockable.io/"
-        val projects = "$baseUrl/projects"
+        val baseUrl = "http://demo7757345.mockable.io/"
+        val projects = "$baseUrl/proyects"
 
-        fun requestHeadlines(key: String,
-                             responseHandler: (ProjectsResponse?) -> Unit,
+        fun requestGetProjects(responseHandler: (ProjectsResponse?) -> Unit,
                              errorHandler: (ANError?) -> Unit) {
             AndroidNetworking.get(BRApi.projects)
                     .setPriority(Priority.LOW)

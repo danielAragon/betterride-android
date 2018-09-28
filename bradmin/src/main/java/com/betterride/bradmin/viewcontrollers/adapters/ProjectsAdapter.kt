@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.betterride.bradmin.R
 import com.betterride.bradmin.models.Project
+import kotlinx.android.synthetic.main.item_project.view.*
 
 class ProjectsAdapter( var projects: ArrayList<Project>,
                        val context: Context): RecyclerView.Adapter<ProjectsAdapter.ViewHolder>(){
@@ -24,10 +25,24 @@ class ProjectsAdapter( var projects: ArrayList<Project>,
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val project = projects.get(position)
-
+        holder.updateFrom(project)
     }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val titleProjectsTextView = view.titleProjectsTextView
+        val dayProjectTextView = view.dayProjectTextView
+        val projectCardView = view.projectCardView
 
+        fun updateFrom(project: Project){
+            titleProjectsTextView.text = project.name
+            dayProjectTextView.text = project.date
+            projectCardView.setOnClickListener { view ->
+                val context = view.context
+//                context.startActivity(
+//                        Intent(context, ArticleActivity::class.java)
+//                                .putExtras(session.toBundle()))
+
+            }
+        }
     }
 }
