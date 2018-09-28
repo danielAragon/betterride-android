@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.item_project.view.*
 class ProjectsAdapter( var projects: ArrayList<Project>,
                        val context: Context): RecyclerView.Adapter<ProjectsAdapter.ViewHolder>(){
 
-    override fun onCreateViewHolder(parent: ViewGroup, position: Int): ProjectsAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, position: Int): ViewHolder {
         return ViewHolder(
                 LayoutInflater.from(context)
                         .inflate(R.layout.item_project,parent, false)
@@ -31,18 +31,12 @@ class ProjectsAdapter( var projects: ArrayList<Project>,
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val titleProjectsTextView = view.titleProjectsTextView
         val dayProjectTextView = view.dayProjectTextView
-        val projectCardView = view.projectCardView
+        //val projectLayout = view.projectLayout
 
         fun updateFrom(project: Project){
             titleProjectsTextView.text = project.name
             dayProjectTextView.text = project.date
-            projectCardView.setOnClickListener { view ->
-                val context = view.context
-//                context.startActivity(
-//                        Intent(context, ArticleActivity::class.java)
-//                                .putExtras(session.toBundle()))
 
-            }
         }
     }
 }

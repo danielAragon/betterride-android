@@ -17,7 +17,9 @@ class BRApi {
                     .setPriority(Priority.LOW)
                     .setTag("BradminApp")
                     .build()
-                    .getAsObject(ProjectsResponse::class.java, object : ParsedRequestListener<ProjectsResponse> {
+                    .getAsObject(ProjectsResponse::class.java,
+                            object : ParsedRequestListener<ProjectsResponse> {
+
                         override fun onResponse(response: ProjectsResponse?) {
                             responseHandler(response)
                         }

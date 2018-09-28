@@ -15,20 +15,20 @@
             android:id="@+id/organiNameTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Organizacion Name"
-            android:layout_margin="@dimen/default_margin"
-            android:textSize="18sp"
+            android:text="Bravo S.A.C."
+            android:layout_margin="12dp"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:textStyle="bold"/>
 
         <TextView
-            android:id="@+id/titleProjectsTextView"
+            android:id="@+id/ProjectsTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Projects"
-            android:layout_margin="@dimen/default_margin"
-            android:textSize="17sp"
+            android:layout_margin="12dp"
+            android:textSize="18sp"
             app:layout_constraintTop_toBottomOf="@id/organiNameTextView"
             app:layout_constraintStart_toStartOf="parent"
             />
@@ -40,7 +40,7 @@
             android:layout_margin="@dimen/default_margin"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/titleProjectsTextView"/>
+            app:layout_constraintTop_toBottomOf="@+id/ProjectsTextView"/>
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/createeventFloatingActionButton"
