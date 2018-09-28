@@ -2,6 +2,8 @@ package com.betterride.bradmin.viewcontrollers.fragments
 
 
 import android.os.Bundle
+import android.support.design.widget.FloatingActionButton
+import android.support.v4.app.DialogFragment
 import android.support.v4.app.Fragment
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.RecyclerView
@@ -21,6 +23,8 @@ import kotlinx.android.synthetic.main.fragment_projects.view.*
 class ProjectsFragment : Fragment() {
 
     var projects = ArrayList<Project>()
+    lateinit var newProject: FloatingActionButton
+    lateinit var dialogFragment: DialogFragment
     lateinit var projectsRecyclerView: RecyclerView
     lateinit var projectsAdapter: ProjectsAdapter
     lateinit var projectsLayoutManager: RecyclerView.LayoutManager
@@ -38,6 +42,11 @@ class ProjectsFragment : Fragment() {
 
         BRApi.requestGetProjects({ response -> handleResponse(response)},
                 { error -> handleError(error)})
+
+        newProject = view.findViewById(R.id.newProjectFloActionButton)
+        newProject.setOnClickListener{view ->
+            //dialogFragment = new
+        }
         return view
     }
 
