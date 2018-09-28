@@ -7,108 +7,192 @@
     tools:context=".viewcontrollers.fragments.ProfileFragment">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingLeft="18dp"
-        android:paddingRight="18dp"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        tools:context=".viewcontrollers.fragments.ProfileFragment">
-        <ScrollView
+        tools:context="pe.edu.upc.fitnow.activities.ProfileActivity"
+        android:orientation="vertical">
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="340dp">
             <LinearLayout
+                android:background="@color/colorPrimaryLight"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="230dp"
                 android:orientation="vertical">
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp">
+                <ImageView
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/operador1" />
 
-                    <ImageView
-                        android:id="@+id/image_profile"
-                        android:layout_marginLeft="100dp"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/operador1" />
-
-                    <ImageButton
-                        android:id="@+id/imagebutton_upload"
-                        android:layout_gravity="bottom"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        app:srcCompat="@drawable/ic_photo_camera_black_24dp"
-                        />
-                </LinearLayout>
-                <EditText
-                    android:id="@+id/text_company_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Bravo S.A.C"
-                    android:drawablePadding="10dp"
-                    android:maxLines="1"
-                    android:drawableLeft="@drawable/ic_business_black_24dp"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:layout_marginTop="10dp"/>
-                <EditText
-                    android:id="@+id/text_address"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Lima, Perú"
-                    android:drawablePadding="10dp"
-                    android:maxLines="1"
-                    android:drawableLeft="@drawable/ic_location_on_black_24dp"
-                    android:ems="10"
-                    android:layout_marginTop="10dp"/>
-                <EditText
-                    android:id="@+id/text_email"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="bravo@gmail.com"
-                    android:drawablePadding="10dp"
-                    android:maxLines="1"
-                    android:drawableLeft="@drawable/ic_email_black_24dp"
-                    android:ems="10"
-                    android:layout_marginTop="10dp"/>
-                <EditText
-                    android:id="@+id/text_phone"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="01 2587957"
-                    android:drawablePadding="10dp"
-                    android:maxLines="1"
-                    android:drawableLeft="@drawable/ic_local_phone_black_24dp"
-                    android:ems="10"
-                    android:layout_marginTop="10dp"/>
-                <EditText
-                    android:id="@+id/text_mobile"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="945977747"
-                    android:drawablePadding="10dp"
-                    android:maxLines="1"
-                    android:drawableLeft="@drawable/ic_phone_android_black_24dp"
-                    android:ems="10"
-                    android:layout_marginTop="10dp"/>
-                <Button
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableTint="@color/colorAccent"
-                    android:layout_marginStart="130dp"
-                    android:text="Save"/>
+                    android:text="Raphael Bravo Rivas"
+                    android:textStyle="bold"
+                    android:textSize="21sp"/>
+
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp">
+                    <LinearLayout
+                        android:paddingLeft="45dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
 
-        </ScrollView>
-        <!-- TODO: Update blank fragment layout -->
+            <android.support.v7.widget.CardView
+                android:layout_width="400dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="220dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="200dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Projects"
+                            android:textStyle="bold"
+                            android:textSize="20sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2"
 
+                            android:textSize="20sp"/>
 
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="200dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="200dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent">
+                            <ImageButton
+                                android:id="@+id/addphoto"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:background="#0000"
+                                android:src="@drawable/ic_photo_camera_black_24dp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="200dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sessions"
+                            android:textStyle="bold"
+                            android:textSize="20sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:textSize="20sp"
+                           />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:paddingLeft="85dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_business_black_24dp"/>
+                <TextView
+                    android:id="@+id/gender"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:text="Bravo S.A.C."
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp">
+            <LinearLayout
+                android:paddingLeft="85dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_phone_android_black_24dp"/>
+                <TextView
+                    android:id="@+id/telephone"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:text="945977747"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp">
+            <LinearLayout
+                android:paddingLeft="55dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
+
 
 </FrameLayout>
