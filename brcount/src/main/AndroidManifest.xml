@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".viewcontrollers.activities.MainActivity">
+        <activity android:name=".viewcontrollers.activities.MainActivity"
+            android:label="MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,7 +22,8 @@
         </activity>
         <activity
             android:name=".viewcontrollers.activities.CountingSessionsActivity"
-            android:label="@string/title_activity_counting_sessions"></activity>
+            android:label="@string/title_activity_counting_sessions"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

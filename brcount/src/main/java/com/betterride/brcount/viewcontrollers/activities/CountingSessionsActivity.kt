@@ -3,7 +3,10 @@ package com.betterride.brcount.viewcontrollers.activities
 import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
+import android.support.design.widget.TabLayout
 import android.support.v4.app.Fragment
+import android.support.v4.app.FragmentManager
+import android.support.v4.app.FragmentPagerAdapter
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import com.betterride.brcount.R
@@ -13,36 +16,36 @@ import kotlinx.android.synthetic.main.activity_counting_sessions.*
 
 class CountingSessionsActivity : AppCompatActivity() {
 
-    private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
-        return@OnNavigationItemSelectedListener navigateTo(item)
-    }
+    private var mSectionsPagerAdapter: SectionsPagerAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_counting_sessions)
 
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+        setSupportActionBar(toolbar)
+        mSectionsPagerAdapter = SectionsPagerAdapter(supportFragmentManager)
+        container.adapter = mSectionsPagerAdapter
 
-        navigation.selectedItemId = R.id.navigation_pending_sessions
+        container.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabs))
+        tabs.addOnTabSelectedListener(TabLayout.ViewPagerOnTabSelectedListener(container))
     }
 
-    private fun fragmentFor(item: MenuItem): Fragment {
-        when(item.itemId) {
-            R.id.navigation_pending_sessions -> {
-                return PendingSessionsFragment()
+    inner class SectionsPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
+
+        override fun getItem(position: Int): Fragment {
+            when(position){
+                0 ->{
+                    return PendingSessionsFragment()
+                }
+                1 ->{
+                    return DoneSessionsFragment()
+                }
             }
-            R.id.navigation_done_sessions -> {
-                return DoneSessionsFragment()
-            }
+            return PendingSessionsFragment()
         }
-        return PendingSessionsFragment()
-    }
 
-    private fun navigateTo(item: MenuItem): Boolean {
-        item.isChecked = true
-        return supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.content, fragmentFor(item))
-                .commit() > 0
+        override fun getCount(): Int {
+            return 2
+        }
     }
 }

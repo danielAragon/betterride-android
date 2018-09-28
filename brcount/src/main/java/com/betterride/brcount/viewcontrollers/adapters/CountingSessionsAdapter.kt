@@ -8,9 +8,12 @@ import android.view.ViewGroup
 import com.betterride.brcount.R
 import com.betterride.brcount.models.Session
 import kotlinx.android.synthetic.main.item_session.view.*
-
+enum class CountingStatus{
+    PENDING, DONE
+}
 class CountingSessionsAdapter(var sessions: ArrayList<Session>,
-                              val context: Context) :
+                              val context: Context,
+                              val status: CountingStatus) :
         RecyclerView.Adapter<CountingSessionsAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, position: Int): ViewHolder {
