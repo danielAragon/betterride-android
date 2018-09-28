@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\MAURICIO\\Desktop\\Nueva carpeta (5)\\betterride-android\\brcount\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es\\values-es.xml",
+            "outputFile": "/Users/danielaragonore/Desktop/betterride-android/brcount/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es/values-es.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\MAURICIO\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-rc01.aar\\71d05ad993ffaa0fbc5c920faa31a066\\res\\values-es\\values-es.xml",
+                    "source": "/Users/danielaragonore/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/24fb46eb60fddad768a6f9ac201d13dd/res/values-es/values-es.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\MAURICIO\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0-rc01.aar\\633015e55d4dd9b7e6771667cd91d1d4\\res\\values-es\\values-es.xml",
+                    "source": "/Users/danielaragonore/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/ffb94f0efdbd864369e1768f43bee882/res/values-es/values-es.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

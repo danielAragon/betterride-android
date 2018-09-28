@@ -10,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="16dp">
-
         <TextView
             android:id="@+id/organiNameTextView"
             android:layout_width="wrap_content"
@@ -21,7 +20,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:textStyle="bold"/>
-
         <TextView
             android:id="@+id/ProjectsTextView"
             android:layout_width="wrap_content"
@@ -30,8 +28,7 @@
             android:layout_margin="12dp"
             android:textSize="18sp"
             app:layout_constraintTop_toBottomOf="@id/organiNameTextView"
-            app:layout_constraintStart_toStartOf="parent"
-            />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/projectsRecyclerView"
