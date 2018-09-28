@@ -1,7 +1,5 @@
 package com.betterride.brcount.viewcontrollers.fragments
 
-import android.content.Context
-import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.GridLayoutManager
@@ -18,7 +16,7 @@ import com.betterride.brcount.network.BRApi
 import com.betterride.brcount.network.SessionsResponse
 import com.betterride.brcount.viewcontrollers.adapters.CountingSessionsAdapter
 import com.betterride.brcount.viewcontrollers.adapters.CountingStatus
-import kotlinx.android.synthetic.main.fragment_pending_sessions.view.*
+import kotlinx.android.synthetic.main.fragment_done_sessions.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

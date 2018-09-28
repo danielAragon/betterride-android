@@ -19,5 +19,4 @@ class CountingActivity : AppCompatActivity() {
                     .setAction("Action", null).show()
         }
     }
-
 }
