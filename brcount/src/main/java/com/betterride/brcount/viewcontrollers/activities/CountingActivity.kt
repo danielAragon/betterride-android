@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity
 import com.betterride.brcount.R
 
 import kotlinx.android.synthetic.main.activity_counting.*
+import kotlinx.android.synthetic.main.content_counting.*
+import kotlinx.android.synthetic.main.content_main.*
 
 class CountingActivity : AppCompatActivity() {
 
@@ -13,6 +15,7 @@ class CountingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_counting)
         setSupportActionBar(toolbar)
-
+        endtButton.setOnClickListener { view ->
+            finish() }
     }
 }
