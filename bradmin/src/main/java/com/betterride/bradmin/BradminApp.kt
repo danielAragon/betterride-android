@@ -6,6 +6,6 @@ import com.androidnetworking.AndroidNetworking
 class BradminApp : Application() {
     override fun onCreate() {
         super.onCreate()
-        AndroidNetworking.initialize(applicationContext)
+        AndroidNetworking.initialize(getApplicationContext())
     }
 }

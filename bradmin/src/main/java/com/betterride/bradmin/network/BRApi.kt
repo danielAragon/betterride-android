@@ -35,7 +35,7 @@ class BRApi {
                              errorHandler: (ANError?) -> Unit) {
             AndroidNetworking.get(BRApi.operators)
                     .setPriority(Priority.LOW)
-                    .setTag("BRAdmin")
+                    .setTag("BradminApp")
                     .build()
                     .getAsObject(OperatorsResponse::class.java, object : ParsedRequestListener<OperatorsResponse> {
                         override fun onResponse(response: OperatorsResponse?) {

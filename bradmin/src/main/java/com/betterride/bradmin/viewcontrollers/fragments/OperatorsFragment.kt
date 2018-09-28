@@ -29,7 +29,7 @@ class OperatorsFragment : Fragment() {
         operatorsRecyclerView = view.operatorsRecyclerView
         operators = ArrayList()
         operatorsAdapter = OperatorsAdapters(operators,view.context)
-        operatorsLayoutManager = GridLayoutManager(view.context,1)
+        operatorsLayoutManager = GridLayoutManager(view.context,1) as RecyclerView.LayoutManager
         operatorsRecyclerView.adapter = operatorsAdapter
         operatorsRecyclerView.layoutManager = operatorsLayoutManager
         BRApi.requestOperators(
