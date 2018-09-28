@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:2:1-26:12
+ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:2:1-39:12
 MERGED from [com.android.support:design:28.0.0-rc01] /Users/danielaragonore/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/8fe683d67a2054a498121192c0f58b23/AndroidManifest.xml:17:1-24:12
 MERGED from [com.amitshekhar.android:android-networking:1.0.2] /Users/danielaragonore/.gradle/caches/transforms-1/files-1.1/android-networking-1.0.2.aar/3f0975ccfd62ac7be90583fdb54419f7/AndroidManifest.xml:18:1-27:12
 MERGED from [com.android.support:appcompat-v7:28.0.0-rc01] /Users/danielaragonore/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/24fb46eb60fddad768a6f9ac201d13dd/AndroidManifest.xml:17:1-22:12
@@ -37,29 +37,29 @@ MERGED from [com.android.support:interpolator:28.0.0-rc01] /Users/danielaragonor
 MERGED from [com.android.support:cursoradapter:28.0.0-rc01] /Users/danielaragonore/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc01.aar/b37510b762be27a389b06741652bd6f9/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/danielaragonore/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/fc06ef69e90e5fc6d3d512a1bad8e14a/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /Users/danielaragonore/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/a0690bc289e8ad24908bc981fb18f700/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:2:1-39:12
 	package
 		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:3:5-37
 		INJECTED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml
 		INJECTED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml
-		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:2:1-26:12
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:2:1-39:12
 		INJECTED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml
-		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:2:1-26:12
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:2:1-39:12
 		INJECTED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:4:5-67
+ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:4:22-64
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:6:5-24:19
+ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:7:5-37:19
 MERGED from [com.android.support:design:28.0.0-rc01] /Users/danielaragonore/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/8fe683d67a2054a498121192c0f58b23/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0-rc01] /Users/danielaragonore/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/8fe683d67a2054a498121192c0f58b23/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/danielaragonore/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/3bcbe6f8a0fd2c98639bc250e291f938/AndroidManifest.xml:9:5-20
@@ -71,39 +71,61 @@ MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] /Users/daniela
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0-rc01] /Users/danielaragonore/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/ffb94f0efdbd864369e1768f43bee882/AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:12:9-35
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:10:9-41
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:11:9-54
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:9:9-43
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:8:9-35
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:13:9-40
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:14:9-40
 	android:name
-		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:7:9-32
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:8:9-32
 activity#com.betterride.brcount.viewcontrollers.activities.MainActivity
-ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:14:9-20:20
-	android:name
-		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:14:19-74
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:15:13-19:29
-action#android.intent.action.MAIN
-ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:16:17-69
-	android:name
-		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:16:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:18:17-77
-	android:name
-		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:18:27-74
-activity#com.betterride.brcount.viewcontrollers.activities.CountingSessionsActivity
-ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:21:9-23:81
+ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:15:9-24:20
 	android:label
-		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:23:13-69
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:17:13-41
+	android:theme
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:18:13-56
 	android:name
-		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:22:13-80
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:16:13-68
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:19:13-23:29
+action#android.intent.action.MAIN
+ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:22:27-74
+activity#com.betterride.brcount.viewcontrollers.activities.CountingSessionsActivity
+ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:25:9-28:59
+	android:label
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:27:13-69
+	android:theme
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:28:13-56
+	android:name
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:26:13-80
+activity#com.betterride.brcount.viewcontrollers.activities.CountingActivity
+ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:29:9-32:59
+	android:label
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:31:13-60
+	android:theme
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:32:13-56
+	android:name
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:30:13-72
+activity#com.betterride.brcount.viewcontrollers.activities.ReportingActivity
+ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:33:9-36:68
+	android:label
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:35:13-61
+	android:theme
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:36:13-56
+	android:name
+		ADDED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml:34:13-73
 uses-sdk
 INJECTED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/danielaragonore/Desktop/betterride-android/brcount/src/main/AndroidManifest.xml

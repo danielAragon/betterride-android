@@ -21,7 +21,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.betterride.brcount.viewcontrollers.activities.MainActivity" >
+        <activity
+            android:name="com.betterride.brcount.viewcontrollers.activities.MainActivity"
+            android:label="MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,7 +33,16 @@
         </activity>
         <activity
             android:name="com.betterride.brcount.viewcontrollers.activities.CountingSessionsActivity"
-            android:label="@string/title_activity_counting_sessions" />
+            android:label="@string/title_activity_counting_sessions"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.betterride.brcount.viewcontrollers.activities.CountingActivity"
+            android:label="@string/title_activity_counting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.betterride.brcount.viewcontrollers.activities.ReportingActivity"
+            android:label="@string/title_activity_reporting"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

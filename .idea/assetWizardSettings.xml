@@ -16,26 +16,11 @@
                             <entry key="actionbar">
                               <value>
                                 <PersistentState>
-                                  <option name="children">
-                                    <map>
-                                      <entry key="image">
-                                        <value>
-                                          <PersistentState>
-                                            <option name="values">
-                                              <map>
-                                                <entry key="paddingPercent" value="-10" />
-                                              </map>
-                                            </option>
-                                          </PersistentState>
-                                        </value>
-                                      </entry>
-                                    </map>
-                                  </option>
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="$PROJECT_DIR$/../42626072_2227511993986469_4803091626815651840_n.png" />
-                                      <entry key="outputName" value="ic_truck" />
+                                      <entry key="imageAsset" value="$PROJECT_DIR$/../betterride-assets/reload-time-2.png" />
+                                      <entry key="outputName" value="ic_time" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -83,7 +68,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/image/ic_edit_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/Applications/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_history_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -93,11 +78,10 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="height" value="35" />
-                            <entry key="outputName" value="ic_edit_black_35dp" />
+                            <entry key="color" value="ffffff" />
+                            <entry key="outputName" value="ic_history_black_24dp" />
                             <entry key="overrideSize" value="true" />
-                            <entry key="sourceFile" value="C:\Users\Ana" />
-                            <entry key="width" value="35" />
+                            <entry key="sourceFile" value="$APPLICATION_HOME_DIR$/bin/C:\Users\Ana" />
                           </map>
                         </option>
                       </PersistentState>
