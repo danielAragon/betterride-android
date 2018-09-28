@@ -18,9 +18,39 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="$PROJECT_DIR$/../betterride-assets/reload-time-2.png" />
+                                      <entry key="imageAsset" value="$PROJECT_DIR$/../betterride-assets/auto-2.png" />
                                       <entry key="outputName" value="ic_time" />
+                                    </map>
+                                  </option>
+                                </PersistentState>
+                              </value>
+                            </entry>
+                            <entry key="launcher">
+                              <value>
+                                <PersistentState>
+                                  <option name="children">
+                                    <map>
+                                      <entry key="foregroundImage">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="scalingPercent" value="59" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                    </map>
+                                  </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="ffffff" />
+                                      <entry key="backgroundLayerName" value="ic_ic_icon_logo_bg" />
+                                      <entry key="foregroundImage" value="$PROJECT_DIR$/../betterride-assets/auto-2.png" />
+                                      <entry key="foregroundLayerName" value="ic_icon_logo_fg" />
+                                      <entry key="outputName" value="ic_icon_logo" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -38,11 +68,6 @@
                                 </PersistentState>
                               </value>
                             </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="ACTIONBAR" />
                           </map>
                         </option>
                       </PersistentState>
