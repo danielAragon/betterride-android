@@ -13,7 +13,7 @@ import com.androidnetworking.error.ANError
 
 import com.betterride.bradmin.R
 import com.betterride.bradmin.models.Operator
-import com.betterride.bradmin.network.BRADApi
+import com.betterride.bradmin.network.BRApi
 import com.betterride.bradmin.network.OperatorsResponse
 import com.betterride.bradmin.viewcontrollers.adapters.OperatorsAdapters
 import kotlinx.android.synthetic.main.fragment_operators.view.*
@@ -32,23 +32,24 @@ class OperatorsFragment : Fragment() {
         operatorsLayoutManager = GridLayoutManager(view.context,1)
         operatorsRecyclerView.adapter = operatorsAdapter
         operatorsRecyclerView.layoutManager = operatorsLayoutManager
-        BRADApi.requestOperators("apikey",
+        BRApi.requestOperators(
                 { response -> handleResponse(response)},
-                { error -> handleError(error)}))
+                { error -> handleError(error)})
         return view
     }
-    private fun handleResponse(response: OperatorsResponse?) {
-        if ("error".equals(response!!.status, true)) {
-            Log.d("BetterRide", response.message)
+    private fun handleResponse(response: OperatorsResponse?){
+        val status = response!!.status
+        if (status.equals("error", true)) {
             return
         }
-        sources = response.sources!!
-        sourcesAdapter.sources = sources
-        sourcesAdapter.notifyDataSetChanged()
+        operators = response.operators!!
+        Log.d("BradminApp", "Found ${operators.size} projects")
+        operatorsAdapter.operators = operators
+        operatorsAdapter.notifyDataSetChanged()
     }
 
-    private fun handleError(anError: ANError?) {
-        Log.d("CatchUp", anError!!.message)
+    private fun handleError(anError: ANError?){
+        Log.d("BradminApp", anError!!.message)
     }
 
 
