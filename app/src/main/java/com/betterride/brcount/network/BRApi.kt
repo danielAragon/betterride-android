@@ -12,8 +12,7 @@ class BRApi {
         val everythingUrl = "$baseUrl/v2/everything"
         val sourcesUrl = "$baseUrl/v2/sources"
 
-        fun requestHeadlines(key: String,
-                             responseHandler: (SessionsResponse?) -> Unit,
+        fun requestHeadlines(responseHandler: (SessionsResponse?) -> Unit,
                              errorHandler: (ANError?) -> Unit) {
             AndroidNetworking.get(BRApi.countingsessions)
                     .setPriority(Priority.LOW)
