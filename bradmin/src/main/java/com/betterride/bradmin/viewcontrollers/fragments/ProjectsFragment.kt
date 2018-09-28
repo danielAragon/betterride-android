@@ -44,7 +44,6 @@ class ProjectsFragment : Fragment() {
     private fun handleResponse(response: ProjectsResponse?){
         val status = response!!.status
         if (status.equals("error", true)) {
-            Log.d("BradminApp", response.message)
             return
         }
         projects = response.projects!!
